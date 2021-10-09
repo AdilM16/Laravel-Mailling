@@ -32,6 +32,6 @@ class TestMail extends Mailable
         return $this->from('adilmohamedmohamed97@gmail.com')
                     ->subject('Objet Test')
                     ->view('emails.test')
-                    ->attach(public_path('img/onizuka.jpg'));
+                    ->attachFromStorage('img/onizuka.jpg');
     }
 }
